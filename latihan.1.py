@@ -16,7 +16,6 @@ class Kotak(object):
    def cetakVolume(self):
       print("Volume\t= ", self.hitungVolume())
 
-# mendefinisikan kelas turunan (subclass)
 class KotakWarna(Kotak):
    def __init__(self, p, l, t, w):
       self.panjang = p
@@ -30,10 +29,10 @@ class KotakWarna(Kotak):
       print("warna\t: ", self.warna)
 
 def main():
-   # membuat objek KotakWarna
+  
    kotakwarna1 = KotakWarna(6, 5, 4, "merah")
 
-   # menggunakan objek
+   
    kotakwarna1.cetakData()
    kotakwarna1.cetakVolume()
 
